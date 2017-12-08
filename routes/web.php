@@ -14,5 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('https://facebook-auth-test.herokuapp.com/auth/login/facebook','Auth\LoginController@redirect');
+Route::get('/auth/login/facebook','Auth\LoginController@redirect');
     Route::get('auth/login/facebook/callback','Auth\LoginController@getCallback');
